@@ -12,21 +12,25 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 }
 
 /* Header */
 header {
-    background-color: #f8ad9d;
+    background-color: #d4604d;
     padding: 1.25rem;
     text-align: center;
+}
+
+header h1 {
+	font-size: 2.5rem;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: rem;
     max-width: 42rem;
     margin: 0 auto;
 }
@@ -44,14 +48,14 @@ header {
     object-fit: cover;
 }
 
-h1 {
+main h1 {
     font-size: 1.875rem;
     font-weight: bold;
 }
 
 /* Navigation */
 nav {
-    background-color: #f8ad9d;
+    background-color: #7a4a40;
 }
 
 nav ul {
@@ -65,7 +69,7 @@ nav ul {
 nav a {
     display: block;
     padding: 0.75rem 1rem;
-    color: white;
+    color: #1f2937;
     text-decoration: none;
 }
 
@@ -124,9 +128,15 @@ main h1 {
     text-decoration: underline;
 }
 
+.card p{
+	text-align: left;
+	margin-bottom: 1rem;
+	
+}
+
 /* Footer */
 footer {
-    background-color: #f8ad9d;
+    background-color: #d4604d;
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
@@ -141,6 +151,13 @@ footer p {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+	.parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
 }
 
 /* Responsive Typography */

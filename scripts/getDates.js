@@ -1,12 +1,14 @@
-function ShowNowYear() {
-    var now = new Date();
-    var year = now.getFullYear();
-    document.write(year);
- }
+// footer
 
- function ShowLastModify() {
-    var lastday = new Date(document.lastModified);
-    document.write(lastday);
- }
+const yearElement = document.getElementById('currentYear');
+const modifiedElement = document.getElementById('lastModified');
 
- 
+if(yearElement){
+   const currentYear = new Date().getFullYear();
+   yearElement.textContent = currentYear;
+}
+
+if (modifiedElement){
+   const lastModifiedDate = document.lastModified;
+   modifiedElement.textContent = `Last Modified: ${lastModifiedDate}`;
+}

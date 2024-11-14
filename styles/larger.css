@@ -19,7 +19,7 @@ body {
 header {
     background-color: #f8ad9d;
     padding: 1.25rem;
-    color: white;
+    color: #1f2937;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ header {
 .profile-image {
     width: 120px;
     height: 150px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.3);
 }
 
 header h1 {
@@ -39,7 +39,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background-color: #f08080;
+    background-color: #f07171;
 }
 
 nav ul {
@@ -52,13 +52,13 @@ nav ul {
 nav a {
     display: block;
     padding: 1rem 2rem;
-    color: white;
+    color: 1f2937;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    background-color: #f4978e;
+    background-color: #d4bebc;
 }
 
 /* Main Content Styles */
@@ -84,17 +84,19 @@ main h1 {
 
 /* Card Styles */
 .card {
-    background: white;
+    background: rgb(246, 223, 223);
     border-radius: 5px;
     overflow: hidden;
 }
 
 .card h2 {
     background-color: #f8ad9d;
-    color: white;
+    color: #1f2937;
     padding: 0.8rem;
     font-weight: normal;
     font-size: 1.3rem;
+    border-radius:5px;
+
 }
 
 .card-content {
@@ -131,8 +133,8 @@ main h1 {
 
 /* Footer Styles */
 footer {
-    background-color: #f8ad9d;
-    color: white;
+    background-color: #f07171;
+    color: #1f2937;
     padding: 1rem;
     text-align: center;
 }
