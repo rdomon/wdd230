@@ -12,12 +12,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #f0fff1;
 }
 
 /* Header Styles */
 header {
-    background-color: #f8ad9d;
+    background-color: #c8d5b9;
     padding: 1.25rem;
     color: #1f2937;;
     display: flex;
@@ -39,7 +39,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background-color: #f07171;
+    background-color: #415D43;
 }
 
 nav ul {
@@ -52,13 +52,13 @@ nav ul {
 nav a {
     display: block;
     padding: 1rem 2rem;
-    color: 1f2937;
+    color: white;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    background-color: #d4bebc;
+    background-color: #1a4301;
 }
 
 /* Main Content Styles */
@@ -84,14 +84,15 @@ main h1 {
 
 /* Card Styles */
 .card {
-    background: rgb(246, 223, 223);
-    border-radius: 5px;
+    background: #c8d5b9;
+    border-radius: 10px;
     overflow: hidden;
+    border: 3px solid #889785;
 }
 
 .card h2 {
-    background-color: #f8ad9d;
-    color: #1f2937;
+    background-color: #8fb996;
+    color: #02000e;
     padding: 0.8rem;
     font-weight: normal;
     font-size: 1.3rem;
@@ -112,8 +113,8 @@ main h1 {
 }
 
 .card a {
-    color: #0000EE;
-    text-decoration: none;
+    color: #0a290d;
+    text-decoration: underline;
 }
 
 .card a:hover {
@@ -133,7 +134,7 @@ main h1 {
 
 /* Footer Styles */
 footer {
-    background-color: #f07171;
+    background-color: #c8d5b9;
     color: #1f2937;
     padding: 1rem;
     text-align: center;

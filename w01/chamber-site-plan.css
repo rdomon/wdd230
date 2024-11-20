@@ -104,12 +104,12 @@ section:hover {
 
 /* Header */
 header {
-    background-color: #1E4073; /* Changed to your secondary color for better brand consistency */
+    background-color: #1E4073;
     text-align: center;
     padding: 2.5rem 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    border-bottom: 5px solid #fbe583; /* Added border using your primary color */
+    border-bottom: 5px solid #fbe583; /* Added border */
 }
 
 #name {
