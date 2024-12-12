@@ -1,0 +1,26 @@
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  
+    .hero-section {
+      grid-column: 1 / span 3;
+    }
+  
+    .event-section {
+      grid-column: 1 / span 2;
+    }
+  
+    .weather-section {
+      grid-column: 3;
+    }
+  
+    .spotlight-section {
+      grid-column: 1 / span 3;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
