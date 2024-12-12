@@ -9,7 +9,7 @@
     /* Color scheme placeholders */
     --primary-color: #fbe583;
     --secondary-color: #1E4073;
-    --accent-color: #1A1A1A;
+    --accent-color: #1E4073;
     --text-color: #1A1A1A;
     --background-color: #FFF9E6;
   }
@@ -62,8 +62,11 @@
     border-radius: 5px;
     z-index: 10;
   }
+  .cta-button:hover{
+    background-color: #1A1A1A;
+  }
   
-  
+  /* Header */
   header {
     background-color: var(--primary-color);
     color: #1E4073;
@@ -73,8 +76,12 @@
   }
   
   /* navigation */
-  nav {
+  /* nav {
     background-color: var(--secondary-color);
+  }
+
+  .nav:hover{
+    background-color: #1A1A1A;
   }
   
   nav ul {
@@ -93,12 +100,41 @@
   nav ul li a {
     color: white;
     text-decoration: none;
-  }
+  } */
   
+  nav {
+    background-color: var(--secondary-color);
+    border-radius: 0.4rem;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 42rem;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #1A1A1A;
+}
+
+
+/* main */
   main {
     padding: 1rem;
   }
   
+/* footer */
   footer {
     background-color: var(--primary-color);
     color: #1E4073;
@@ -113,6 +149,8 @@
   h3{
     font-family: 'Sansita', sans-serif;
   }
+
+
   
   /* Hamburger menu for mobile */
   .menu-toggle {
@@ -137,3 +175,21 @@
       display: none;
     }
   }
+
+
+.spotlight{
+    background-color: #FFF9E6; 
+    border: 2.5px solid #1E4073; 
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 3rem;
+    margin-inline: auto;
+    width: calc(100% - 24rem);
+    transition: transform 0.3s ease;
+}
+
+.weather-section{
+    background-color: #FFF9E6; 
+
+}
