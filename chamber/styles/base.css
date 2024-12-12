@@ -4,27 +4,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&family=Lato:wght@400;700&display=swap');
 
+/* Base styles for Chamber of Commerce website */
 :root {
     /* Color scheme placeholders */
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --text-color: #333;
-    --background-color: #f4f4f4;
+    --primary-color: #fbe583;
+    --secondary-color: #1E4073;
+    --accent-color: #1A1A1A;
+    --text-color: #1A1A1A;
+    --background-color: #FFF9E6;
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
   }
+  
+  /* Hero Section Styling */
+  .hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Sansita', sans-serif;
+
+  }
+  
+  .hero-section h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(44, 62, 80, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
+  .hero-section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
   
   header {
     background-color: var(--primary-color);
-    color: white;
+    color: #1E4073
+    ;
     padding: 1rem;
     text-align: center;
+    font-family: 'Sansita', sans-serif;
+
   }
   
   nav {
@@ -55,9 +102,17 @@
   
   footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #1E4073;
     text-align: center;
     padding: 1rem;
+  }
+
+/* font */
+  h2{
+    font-family: 'Sansita', sans-serif;
+  }
+  h3{
+    font-family: 'Sansita', sans-serif;
   }
   
   /* Hamburger menu for mobile */

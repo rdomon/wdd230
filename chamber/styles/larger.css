@@ -8,6 +8,18 @@
   
     .hero-section {
       grid-column: 1 / span 3;
+      position: relative;
+    }
+  
+    .hero-section h2 {
+      font-size: 2rem;
+      top: 30px;
+    }
+  
+    .cta-button {
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      bottom: 30px;
     }
   
     .event-section {
@@ -22,5 +34,24 @@
       grid-column: 1 / span 3;
       display: flex;
       justify-content: space-between;
+    }
+  
+    .spotlight-section .spotlight {
+      flex: 1;
+      margin: 0 10px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+  }
+  
+  /* Larger desktop view */
+  @media (min-width: 1024px) {
+    .hero-section h2 {
+      font-size: 2.5rem;
+    }
+  
+    .cta-button {
+      font-size: 1.5rem;
     }
   }
