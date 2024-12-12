@@ -5,7 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Hamburger Menu Toggle
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('show-menu');
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Dynamic Last Modified Date
+    const lastModifiedElement = document.getElementById('modification-date');
+    lastModifiedElement.textContent = document.lastModified;
+
+    // Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('show');
+    });
 });
