@@ -67,6 +67,18 @@
   }
   
   /* Header */
+.logo{
+    display:grid;
+    grid-template-columns: 300px 600px 300px;
+}
+#logo-img{
+    grid-column-start: 1;
+}
+#title{
+    grid-column-start: 2;
+    margin-top: 50px;
+}
+
   header {
     background-color: var(--primary-color);
     color: #1E4073;

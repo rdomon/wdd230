@@ -1,5 +1,6 @@
 /* Styles for larger screens */
 @media (min-width: 768px) {
+
     main {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
