@@ -66,14 +66,13 @@
   
   header {
     background-color: var(--primary-color);
-    color: #1E4073
-    ;
+    color: #1E4073;
     padding: 1rem;
     text-align: center;
     font-family: 'Sansita', sans-serif;
-
   }
   
+  /* navigation */
   nav {
     background-color: var(--secondary-color);
   }
