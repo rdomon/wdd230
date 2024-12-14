@@ -1,4 +1,6 @@
 /* styles/dark-mode.css */
+
+/* color */
 body.dark-mode {
     --primary-color: #fbe583;
     --secondary-color: #FFF9E6;
@@ -12,18 +14,24 @@ body.dark-mode {
     --accent-color: #1E4073;
     --text-color: #1A1A1A;
     --background-color: #FFF9E6; */
-    
 }
-
-.event-section p,
+.dark-mode .event-section p,
+.dark-mode .weather-section p,
+.dark-mode .event-section h2{
+    color:#FFF9E6;
+}
+/* .event-section p,
 .weather-section p,
 .event-section h2{
     color:#FFF9E6;
-}
+} */
 
 .logo h1{
     color:#1E4073;
 }
+
+
+
 #dark-mode-toggle {
     position: fixed;
     top: 20px;
