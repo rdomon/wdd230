@@ -1,0 +1,52 @@
+/* styles/dark-mode.css */
+body.dark-mode {
+    --primary-color: #fbe583;
+    --secondary-color: #FFF9E6;
+    --accent-color: #1E4073;
+    --text-color: #1A1A1A;
+    --background-color: #1E4073;
+
+    /* Color scheme placeholders */
+    /* --primary-color: #fbe583;
+    --secondary-color: #1E4073;
+    --accent-color: #1E4073;
+    --text-color: #1A1A1A;
+    --background-color: #FFF9E6; */
+    
+}
+
+.event-section p,
+.weather-section p,
+.event-section h2{
+    color:#FFF9E6;
+}
+
+.logo h1{
+    color:#1E4073;
+}
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+#dark-mode-toggle .dark-mode-icon {
+    display: none;
+}
+
+#dark-mode-toggle .light-mode-icon {
+    display: inline;
+}
+
+body.dark-mode #dark-mode-toggle .dark-mode-icon {
+    display: inline;
+}
+
+body.dark-mode #dark-mode-toggle .light-mode-icon {
+    display: none;
+}

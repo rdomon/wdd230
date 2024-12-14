@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +22,15 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-
+    <link rel="stylesheet" href="styles/dark-mode.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
             <img id="logo-img" src="images/logo.png" alt="Tokyo Chamber of Commerce Logo" width="200" height="200">
             <h1 id="title">Tokyo Chamber of Commerce</h1>
         </div>
-        
 
         <!-- Menu -->
         <nav>
@@ -43,6 +44,13 @@
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
+
+        <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+            <span class="light-mode-icon">🌞</span>
+            <span class="dark-mode-icon">🌙</span>
+        </button>
+
     </header>
 
     <main>
@@ -106,5 +114,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+
 </body>
 </html>
