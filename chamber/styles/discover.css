@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
     main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
         gap: 1rem;
     }
 
@@ -20,7 +20,7 @@
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
 }
 
@@ -69,13 +69,40 @@
     padding: 0.5rem;
     background-color: #f1f1f1;
     border-radius: 4px;
+    text-align: center;
 }
 
 .visit-tracker {
     margin-top: 1rem;
     text-align: center;
 }
+.visit-tracker p{
+    padding-left: 20px;
+}
 
-h2{
-    margin-left: 50px;
+
+.visit-tracker h2,
+.demographics h2,
+.event-head{
+    text-align: center;
+    color: #1E4073;
+    background-color: #fbe583;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+
+
+}
+
+
+.discover-tokyo{
+    text-align: center;
+    background-color: #fbe583;
+    color: #1E4073;
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-right:40px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+section{
+    margin-bottom: 50px;
 }
