@@ -30,7 +30,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: rem;
+    gap: 1rem;
     max-width: 42rem;
     margin: 0 auto;
 }
