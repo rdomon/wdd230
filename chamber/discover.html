@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover Tokyo: Demographics, Attractions, and Local Information">
+    
+    <!-- Existing stylesheet links from original page -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+</head>
+<body>
+    <header>
+        <!-- Copy from existing header -->
+        <div class="logo">
+            <img id="logo-img" src="images/logo.png" alt="Tokyo Chamber of Commerce Logo" width="200" height="200">
+            <h1 id="title">Tokyo Chamber of Commerce</h1>
+        </div>
+
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+            <span class="light-mode-icon">🌞</span>
+            <span class="dark-mode-icon">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <h2>Tokyo Chamber of Commerce</h2>
+            <img id="hero-image" src="images/hero-image.jpg" alt="City Landscape" width="900" height="500">
+        </section>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <section class="demographics">
+                <h2>Tokyo Demographics</h2>
+                <ul>
+                    <li>Population: 13.96 million (2022)</li>
+                    <li>Area: 2,194 km² (847 sq mi)</li>
+                    <li>Density: 6,363/km² (16,480/sq mi)</li>
+                    <li>Major Industries: Technology, Finance, Media</li>
+                    <li>GDP: $1.6 trillion (2021)</li>
+                </ul>
+            </section>
+
+            <section class="visit-tracker">
+                <h2>Welcome to Tokyo</h2>
+                <p id="visit-message">Welcome! Let us know if you have any questions.</p>
+                <p id="visits-count">Number of Visits: <span id="visit-number">0</span></p>
+            </section>
+        </div>
+
+        <div class="gallery">
+            <section class="local-photos">
+                <h2>Discover Tokyo</h2>
+                <div class="photo-grid">
+                    <figure>
+                        <img src="images/skyline.jpg" data-src="images/skyline.jpg" alt="Tokyo Skyline" loading="lazy" width="640px" height="480px">
+                        <figcaption>Iconic Tokyo Skyline at Sunset</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/shibuya-crossing.jpg" data-src="images/shibuya-crossing.jpg" alt="Shibuya Crossing" loading="lazy" width="640px" height="480px">
+                        <figcaption>Shibuya Crossing: World's Busiest Intersection</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/tokyo-tower.jpg" data-src="images/tokyo-tower.jpg" alt="Tokyo Tower" loading="lazy" width="640px" height="480px">
+                        <figcaption>Tokyo Tower: Iconic Landmark</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/asakusa.jpg" data-src="images/asakusa.jpg" alt="Asakusa Kaminari-mon" loading="lazy" width="640px" height="480px">
+                        <figcaption>Asakusa Kaminari-mon</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/tokyo-dome.jpg" data-src="images/tokyo-dome.jpg" alt="Tokyo Dome" loading="lazy" width="640px" height="480px">
+                        <figcaption>Tokyo Dome</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/station.jpg" data-src="images/station.jpg" alt="Tokyo Station" loading="lazy" width="640px" height="480px">
+                        <figcaption>Tokyo Station</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tokyo Chamber of Commerce</p>
+        <p>Rena Domon | WDD 230 Project</p>
+        <p id="last-modified">Last Modified: <span id="modification-date"></span></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+</body>
+</html>
