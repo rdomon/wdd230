@@ -22,10 +22,13 @@
     <meta property="fb:app_id" content="App-id">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <img class=profile src="images/profile.jpeg" alt="Rena Domon Profile" width="72">
         <h1>Rena Domon</h1>
     </header>
+
+    <!-- Navigation -->
     <nav class="nav">
         <ul>
             <li><a href="https://rdomon.github.io/wdd230/home/index.html">Home</a></li>
@@ -35,6 +38,35 @@
         </ul>
     </nav>
     <main>
+        <!-- Hero -->
+        <!-- <picture>
+            <source srcset="temple-mobile.webp" media="(max-width: 400px)">
+            <source srcset="temple-large.webp" media="(min-width: 401px)">
+            <img src="images/temple.jpeg" alt="Sapporo Temple">
+          </picture>
+          <div class="temple-label">Sapporo Japan Temple</div> -->
+
+
+          <!-- <picture>
+            <source media="(max-width: 400px)" srcset="images/temple-640x400.webp" />
+            <source media="(min-width: 401px) and (max-width: 960px)" srcset="images/temple-960x600.webp" />
+            <img src="images/temple.webp" alt="Sapporo Japan LDS Temple"/>
+        </picture>
+         <div class="temple-label">Sapporo Japan Temple</div> -->
+
+
+         <section class="hero">
+            <div class="temple-label">
+                <h3>Sapporo Japan Temple</h3>
+            </div>
+            <picture>
+                <source media="(max-width: 400px )" srcset="images/temple.webp" />
+                <source media="(max-width: 960px )" srcset="images/temple.webp" />
+                <img src="images/temple.webp" alt="Mesa Arizona LDS Temple" width="1280" height="800" />
+            </picture>
+        </section>
+
+        <!-- Learning Activities -->
         <div class="parent">
             <section class="card">
                 <h2 id="learning">Learning Activities</h2>
@@ -49,6 +81,7 @@
                     </ul>
                 </div>
             </section>
+            <!-- Information -->
             <section class="card">
                 <h2 id="info">Information</h2>
                 <div id="information">
@@ -58,11 +91,14 @@
             </section>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; <span id="currentYear"></span> Rena Domon, Tokyo, Japan</p>
         <p id="lastModified"></p>
     </footer>
 
+    <!-- Script -->
     <script src="scripts/getDates.js"></script>
 </body>
 </html>
