@@ -24,7 +24,7 @@
 <body>
     <!-- Header -->
     <header>
-        <img class=profile src="images/profile.jpeg" alt="Rena Domon Profile" width="72">
+        <img class=profile src="images/profile.webp" alt="Rena Domon Profile" width="72" height="72" loading="lazy">
         <h1>Rena Domon</h1>
     </header>
 
@@ -39,22 +39,6 @@
     </nav>
     <main>
         <!-- Hero -->
-        <!-- <picture>
-            <source srcset="temple-mobile.webp" media="(max-width: 400px)">
-            <source srcset="temple-large.webp" media="(min-width: 401px)">
-            <img src="images/temple.jpeg" alt="Sapporo Temple">
-          </picture>
-          <div class="temple-label">Sapporo Japan Temple</div> -->
-
-
-          <!-- <picture>
-            <source media="(max-width: 400px)" srcset="images/temple-640x400.webp" />
-            <source media="(min-width: 401px) and (max-width: 960px)" srcset="images/temple-960x600.webp" />
-            <img src="images/temple.webp" alt="Sapporo Japan LDS Temple"/>
-        </picture>
-         <div class="temple-label">Sapporo Japan Temple</div> -->
-
-
          <section class="hero">
             <div class="temple-label">
                 <h3>Sapporo Japan Temple</h3>
@@ -65,6 +49,9 @@
                 <img src="images/temple.webp" alt="Mesa Arizona LDS Temple" width="1280" height="800" />
             </picture>
         </section>
+
+        <h2 class="attribute">WDD 230: Web Frontend Development</h2>
+
 
         <!-- Learning Activities -->
         <div class="parent">
@@ -81,6 +68,7 @@
                     </ul>
                 </div>
             </section>
+
             <!-- Information -->
             <section class="card">
                 <h2 id="info">Information</h2>
@@ -92,6 +80,22 @@
         </div>
     </main>
 
+    <!-- Google Map -->
+    <section class="map-section">
+        <h2 class="map-title">Local Area Map</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8638403022!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQxJzM2LjYiTiAxMzfCsDQxJzMwLjEiRQ!5e0!3m2!1sen!2sus!4v1702598400000!5m2!1sen!2sus" 
+            width="1100" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+</main>
+
+
     <!-- Footer -->
     <footer>
         <p>&copy; <span id="currentYear"></span> Rena Domon, Tokyo, Japan</p>
@@ -100,5 +104,37 @@
 
     <!-- Script -->
     <script src="scripts/getDates.js"></script>
+
+    <script>
+        // Page Visit Counter using localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the visits element
+            const visitsElement = document.getElementById('visitsPlaceholder');
+            
+            // Check if localStorage is supported
+            if (typeof(Storage) !== "undefined") {
+                // Get current visits or initialize to 0
+                let visits = localStorage.getItem('pageVisits');
+                
+                // If visits is null, set to 0
+                if (visits === null) {
+                    visits = 0;
+                }
+                
+                // Increment visits
+                visits = Number(visits) + 1;
+                
+                // Store the new number of visits
+                localStorage.setItem('pageVisits', visits);
+                
+                // Display visits
+                visitsElement.textContent = visits;
+            } else {
+                // Fallback for browsers that don't support localStorage
+                visitsElement.textContent = 'Not supported';
+            }
+        });
+    </script>
+
 </body>
 </html>

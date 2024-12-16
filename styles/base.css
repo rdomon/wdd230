@@ -111,6 +111,11 @@ main h1 {
   }
 
 
+  .attribute{
+    text-align: center;
+    margin-bottom:30px;
+  }
+
 /* Card */
 section{
     margin-bottom:2rem;
@@ -178,6 +183,27 @@ section{
 	margin-bottom: 1rem;
 }
 
+/* Google Map */
+.map-section {
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 1400px;
+    padding: 0 1rem;
+}
+
+.map-title{
+    text-align: center;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.map-section iframe {
+    max-width: 1400px;
+    height: 400px;  /* Reduced height for mobile screens */
+    padding-bottom: 20px;
+}
+
+
 /* Footer */
 footer {
     background-color: #c8d5b9;
@@ -226,4 +252,30 @@ footer p {
 
 .font-bold {
     font-weight: bold;
+}
+
+
+/* Map Section Responsive Styles */
+@media (max-width: 768px) {
+    .map-section {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .map-section iframe {
+        width: 100%;
+        height: 250px;  /* Reduced height for mobile screens */
+    }
+}
+
+/* Ensure map is fully responsive */
+.map-section iframe {
+    width: 100%;
+    max-width: 1400px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+
+    /* display: block; */
 }
