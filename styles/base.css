@@ -284,8 +284,7 @@ footer p {
 
 
 /* For Discover Page */
-/* Discover Page Specific Styles */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     main {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -361,4 +360,4 @@ footer p {
 .visit-tracker {
     margin-top: 1rem;
     text-align: center;
-}
+} */
