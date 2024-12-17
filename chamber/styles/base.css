@@ -1,7 +1,6 @@
 /* Base styles for Chamber of Commerce website */
 
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&family=Lato:wght@400;700&display=swap');
 
 /* Base styles for Chamber of Commerce website */
@@ -21,7 +20,7 @@
     background-color: var(--background-color);
     max-width: 1200px;
     margin: 0 auto;
-    transition: #FFF9E6 0.3s, color 0.3s;
+    /* transition: #FFF9E6 0.3s, color 0.3s; */
   }
   
   /* Hero Section Styling */
