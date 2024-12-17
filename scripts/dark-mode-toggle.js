@@ -38,16 +38,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         body.dark-mode nav a {
-            color: black;
+            color: white;
         }
         
-        body.dark-mode section {
+
+        body.dark-mode section,
+        body.dark-mode .card {
             background-color: #2C2C2C;
             border-color: #3C3C3C;
+            color: #e0e0e0;
         }
         
         body.dark-mode .card a {
             color: #e0e0e0;
+        }
+
+        body.dark-mode #info,
+        body.dark-mode #learning {
+            background-color: #2C2C2C;
+            border-color: #3C3C3C;
+            color: white;
+        }
+
+        body.dark-mode #learning,
+        body.dark-mode #info{
+            background-color:#1d2e28;
         }
         
         body.dark-mode footer {
