@@ -97,6 +97,11 @@ main h1 {
     gap: 1.5rem;
 }
 
+picture{
+    margin-bottom: 30px;
+
+}
+
 /* Temple */
 .temple-label {
     position: absolute;
@@ -123,16 +128,22 @@ section{
     border: 3px solid #889785;
     background-color: #c8d5b9;
     border-radius: 10px;
-
 }
 
-#learning{
-    border-bottom: 5px solid #415D43;
+.card{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: 3px solid #889785;
+    background-color: #c8d5b9;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
+#learning,
 #info{
     border-bottom: 5px solid #415D43;
+    background-color: #889785;
 }
+
 
 #activities {
     /* border: solid #e5e7eb;
@@ -154,11 +165,12 @@ section{
 	/* margin-bottom: 2rem; */
 }
 
-.card h2 {
+.card h3 {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #02000e;
+    text-align: center;
 }
 
 .card ul {
@@ -240,7 +252,7 @@ footer p {
         font-size: 1.25rem;
     }
 
-    .card h2 {
+    .card h3 {
         font-size: 1.125rem;
     }
 }
@@ -279,85 +291,3 @@ footer p {
 
     /* display: block; */
 }
-
-
-
-
-/* For Discover Page */
-/* @media (min-width: 768px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 1rem;
-    }
-
-    .sidebar {
-        grid-column: 1;
-        background-color: #f9f9f9;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .gallery {
-        grid-column: 2;
-    }
-}
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.photo-grid figure {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-@media (min-width: 768px) {
-    .photo-grid figure:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-    }
-}
-
-.photo-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.photo-grid img.fade-in {
-    opacity: 1;
-}
-
-.photo-grid figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.demographics ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.demographics li {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-}
-
-.visit-tracker {
-    margin-top: 1rem;
-    text-align: center;
-} */
