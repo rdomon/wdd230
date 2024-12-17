@@ -80,3 +80,25 @@ body.dark-mode #dark-mode-toggle .light-mode-icon {
         z-index: 1000;
     }
 }
+
+
+/* Join Page */
+.dark-mode .membership-benefits h2,
+.dark-mode .membership-level h3{
+    color:#1E4073;
+}
+
+.dark-mode .membership-benefits{
+    color:#1E4073;
+}
+
+
+.dark-mode .membership-form input[type="submit"]:hover {
+    color:#1E4073;
+    background-color: #fbe583;
+}
+
+.dark-mode .membership-form input[type="submit"] {
+    background-color: #fbe583;
+    color:#1E4073;
+}
