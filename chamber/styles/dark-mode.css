@@ -102,3 +102,11 @@ body.dark-mode #dark-mode-toggle .light-mode-icon {
     background-color: #fbe583;
     color:#1E4073;
 }
+
+/* Directory Page */
+.dark-mode #list-view-btn,
+.dark-mode #grid-view-btn{
+    background-color:#f1e3b7;
+    color:#1E4073;
+
+}

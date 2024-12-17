@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Tokyo Tech Solutions",
+            "address": "5-10-5 Shibuya, Tokyo 150-0002",
+            "phone": "+81 3-1234-5678",
+            "website": "https://tokyotechsolutions.co.jp",
+            "logo": "tech-solutions-logo.png",
+            "membershipLevel": "Gold",
+            "description": "Innovative technology consulting firm specializing in digital transformation for enterprises.",
+            "industry": "Technology Consulting"
+        },
+        {
+            "name": "Sakura International Trading",
+            "address": "2-3-1 Minato, Tokyo 105-0001",
+            "phone": "+81 3-8901-2345",
+            "website": "https://sakura-trading.com",
+            "logo": "sakura-trading-logo.png",
+            "membershipLevel": "Platinum",
+            "description": "Global trading company with expertise in import-export across multiple industries.",
+            "industry": "International Trade"
+        },
+        {
+            "name": "Zen Hospitality Group",
+            "address": "1-2-3 Shinjuku, Tokyo 160-0022",
+            "phone": "+81 3-4567-8901",
+            "website": "https://zenhospitality.jp",
+            "logo": "zen-hospitality-logo.png",
+            "membershipLevel": "Silver",
+            "description": "Leading hospitality management company operating hotels and resorts across Japan.",
+            "industry": "Hospitality"
+        },
+        {
+            "name": "Green Energy Solutions",
+            "address": "3-4-5 Chuo, Tokyo 103-0027",
+            "phone": "+81 3-6789-0123",
+            "website": "https://greenenergysolutions.jp",
+            "logo": "green-energy-logo.png",
+            "membershipLevel": "Gold",
+            "description": "Renewable energy company focusing on solar and wind power technologies.",
+            "industry": "Renewable Energy"
+        },
+        {
+            "name": "Samurai Robotics Inc.",
+            "address": "4-5-6 Bunkyo, Tokyo 112-0012",
+            "phone": "+81 3-2345-6789",
+            "website": "https://samurairobotics.com",
+            "logo": "samurai-robotics-logo.png",
+            "membershipLevel": "Platinum",
+            "description": "Advanced robotics research and manufacturing company pushing technological boundaries.",
+            "industry": "Robotics"
+        },
+        {
+            "name": "Harmony Financial Services",
+            "address": "6-7-8 Chiyoda, Tokyo 102-0093",
+            "phone": "+81 3-9012-3456",
+            "website": "https://harmonyfinancial.co.jp",
+            "logo": "harmony-financial-logo.png",
+            "membershipLevel": "Silver",
+            "description": "Comprehensive financial advisory and investment management firm.",
+            "industry": "Financial Services"
+        },
+        {
+            "name": "Urban Design Architects",
+            "address": "7-8-9 Shibuya, Tokyo 150-0043",
+            "phone": "+81 3-5678-9012",
+            "website": "https://urbandesignarchitects.jp",
+            "logo": "urban-design-logo.png",
+            "membershipLevel": "Gold",
+            "description": "Award-winning architectural firm specializing in sustainable urban development.",
+            "industry": "Architecture"
+        }
+    ]
+}
