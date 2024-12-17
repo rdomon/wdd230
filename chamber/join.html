@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Chamber of Commerce</title>
+    <meta name="description" content="Official website for the Tokyo Chamber of Commerce">
+    <meta name="author" content="Rena Domon">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Tokyo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" src="images/logo.png">
+    <meta property="og:url" content="https://www.citychamber.org">
+    <meta property=”fb:app_id” content=”App-id”>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+
+    <!-- Style -->
+    <style>
+        .join-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .membership-benefits,
+        .membership-form {
+            background-color: white;
+            border: 2px solid var(--secondary-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .membership-benefits:hover,
+        .membership-form:hover {
+            transform: translateY(-5px);
+        }
+
+        .membership-form {
+            background-color: var(--background-color);
+        }
+
+        .membership-form h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .membership-form label {
+            display: block;
+            margin-bottom: 0.75rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .membership-form input,
+        .membership-form textarea,
+        .membership-form select {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--secondary-color);
+            border-radius: 6px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .membership-form input:focus,
+        .membership-form textarea:focus,
+        .membership-form select:focus {
+            outline: none;
+            border-color: #2C3E50;
+            box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.2);
+        }
+
+        .membership-form input[type="submit"] {
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .membership-form input[type="submit"]:hover {
+            background-color: #2C3E50;
+            transform: translateY(-2px);
+        }
+
+        /* Fix here */
+        .membership-benefits{
+
+        }
+
+        .membership-benefits h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .membership-benefits h3 {
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+        }
+
+        .membership-benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .membership-benefits li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .membership-benefits li:last-child {
+            border-bottom: none;
+        }
+
+        @media (min-width: 768px) {
+            .join-container {
+                grid-template-columns: 300px 300px 200px;
+                gap: 3rem;
+            }
+
+            .membership-benefits {
+                grid-column: 3;
+                grid-row: 1;
+                grid-column-start: 3;
+                grid-column-end: 7;
+            }
+
+            .membership-form {
+                grid-column: 1;
+                grid-row: 1;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .join-container {
+                gap: 4rem;
+                padding: 2rem;
+            }
+
+            .membership-benefits,
+            .membership-form {
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo-img" src="images/logo.png" alt="Tokyo Chamber of Commerce Logo" width="200" height="200">
+            <h1 id="title">Tokyo Chamber of Commerce</h1>
+        </div>
+
+        <!-- Menu -->
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="https://rdomon.github.io/wdd230/chamber/index.html" class="active">Home</a></li>
+                <li><a href="https://rdomon.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+            <span class="light-mode-icon">🌞</span>
+            <span class="dark-mode-icon">🌙</span>
+        </button>
+
+    </header>
+
+    <main>
+        <div class="join-container">
+            <div class="membership-form">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html">
+                    <div class="form-row">
+                        <label for="firstName">First Name*
+                            <input type="text" id="firstName" name="firstName" required>
+                        </label>
+
+                        <label for="lastName">Last Name*
+                            <input type="text" id="lastName" name="lastName" required>
+                        </label>
+                    </div>
+
+                    <label for="title">Title/Position
+                        <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters, letters, spaces, and hyphens only">
+                    </label>
+
+                    <label for="email">Email Address*
+                        <input type="email" id="email" name="email" required placeholder="example@company.com">
+                    </label>
+
+                    <label for="phone">Mobile Phone Number*
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+
+                    <label for="organization">Business/Organization Name*
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+
+                    <label for="membershipLevel">Membership Level*
+                        <select id="membershipLevel" name="membershipLevel" required>
+                            <option value="">Select a Membership Level</option>
+                            <option value="np">NP Membership (Non-Profit, Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">Business/Organization Description
+                        <textarea id="description" name="description" rows="4"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Submit Membership Application">
+                </form>
+            </div>
+
+            <div class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <div class="membership-level">
+                    <h3>NP Membership</h3>
+                    <ul>
+                        <li>Free for non-profit organizations</li>
+                        <li>Basic networking opportunities</li>
+                        <li>Limited event access</li>
+                    </ul>
+                </div>
+
+                <div class="membership-level">
+                    <h3>Bronze Membership</h3>
+                    <ul>
+                        <li>Networking events</li>
+                        <li>Basic business listing</li>
+                        <li>Quarterly newsletter</li>
+                    </ul>
+                </div>
+
+                <div class="membership-level">
+                    <h3>Silver Membership</h3>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Discounted event tickets</li>
+                        <li>Business spotlight opportunity</li>
+                        <li>Monthly training webinars</li>
+                    </ul>
+                </div>
+
+                <div class="membership-level">
+                    <h3>Gold Membership</h3>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>Priority business listing</li>
+                        <li>Free annual conference ticket</li>
+                        <li>Exclusive networking sessions</li>
+                        <li>Featured on homepage spotlight</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tokyo Chamber of Commerce</p>
+        <p>Rena Domon | WDD 230 Project</p>
+        <p id="last-modified">Last Modified: <span id="modification-date"></span></p>
+    </footer>
+
+    <script>
+        // Set timestamp when page loads
+        document.getElementById('timestamp').value = new Date().toLocaleString();
+
+        // Last modified script
+        const lastModified = document.lastModified;
+        document.getElementById('modification-date').textContent = lastModified;
+    </script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+
+</body>
+</html>
