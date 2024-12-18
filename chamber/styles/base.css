@@ -471,6 +471,11 @@ nav {
   margin-bottom: 15px;
 }
 
+.members-list{
+  display:grid;
+  grid-template-columns: 300px 600px 300px;
+}
+
 .member-list-item {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
@@ -480,6 +485,9 @@ nav {
   align-items: center;
   gap: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-column-start: 1;
+  grid-column-end: 3;
+
 }
 
 .member-list-item span {
