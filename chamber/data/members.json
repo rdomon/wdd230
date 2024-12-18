@@ -1,74 +1,74 @@
 {
     "members": [
         {
-            "name": "Tokyo Tech Solutions",
-            "address": "5-10-5 Shibuya, Tokyo 150-0002",
-            "phone": "+81 3-1234-5678",
-            "website": "https://tokyotechsolutions.co.jp",
-            "logo": "tech-solutions-logo.png",
+            "name": "SONY",
+            "address": "1-7-1 Konan Minato-ku, Tokyo, 108-0075 Japan",
+            "phone": "81-3-6748-2111",
+            "website": "https://www.sony.co.jp/",
+            "logo": "sony-logo.png",
             "membershipLevel": "Gold",
-            "description": "Innovative technology consulting firm specializing in digital transformation for enterprises.",
-            "industry": "Technology Consulting"
+            "description": "A company that creates a wide range of electronic devices and also produces movies, music, and video games.",
+            "industry": "Electric Equipment"
         },
         {
-            "name": "Sakura International Trading",
-            "address": "2-3-1 Minato, Tokyo 105-0001",
-            "phone": "+81 3-8901-2345",
-            "website": "https://sakura-trading.com",
-            "logo": "sakura-trading-logo.png",
-            "membershipLevel": "Platinum",
-            "description": "Global trading company with expertise in import-export across multiple industries.",
-            "industry": "International Trade"
+            "name": "The Bank of Mitsubishi UFJ",
+            "address": "1-4-5 Marunouchi, Chiyoda-ku, Tokyo",
+            "phone": "1 (212) 782-6800",
+            "website": "https://www.bk.mufg.jp/",
+            "logo": "ufj-logo.jpg",
+            "membershipLevel": "Gold",
+            "description": "A banking company offering global financial services.",
+            "industry": "Financial"
         },
         {
-            "name": "Zen Hospitality Group",
-            "address": "1-2-3 Shinjuku, Tokyo 160-0022",
-            "phone": "+81 3-4567-8901",
-            "website": "https://zenhospitality.jp",
-            "logo": "zen-hospitality-logo.png",
+            "name": "Toyota Motor Corporatio",
+            "address": "1, Toyota-cho, Toyota-shi, Aichi, Japan",
+            "phone": "1 (800) 331-4331",
+            "website": "https://www.toyota.co.jp/",
+            "logo": "toyota.jpeg",
+            "membershipLevel": "Gold",
+            "description": "A car company focused on developing and marketing environmentally friendly vehicles.",
+            "industry": "Car"
+        },
+        {
+            "name": "Shiseido",
+            "address": "Shiseido Ginza Building, 7-5-5 Ginza, Chuo-ku, Tokyo",
+            "phone": "0120-81-4710",
+            "website": "https://www.shiseido.co.jp/",
+            "logo": "shiseido.jpeg",
             "membershipLevel": "Silver",
-            "description": "Leading hospitality management company operating hotels and resorts across Japan.",
-            "industry": "Hospitality"
+            "description": "A company that offers a wide range of products including skin care, makeup, and hair care.",
+            "industry": "Cosmetics"
         },
         {
-            "name": "Green Energy Solutions",
-            "address": "3-4-5 Chuo, Tokyo 103-0027",
-            "phone": "+81 3-6789-0123",
-            "website": "https://greenenergysolutions.jp",
-            "logo": "green-energy-logo.png",
-            "membershipLevel": "Gold",
-            "description": "Renewable energy company focusing on solar and wind power technologies.",
-            "industry": "Renewable Energy"
-        },
-        {
-            "name": "Samurai Robotics Inc.",
-            "address": "4-5-6 Bunkyo, Tokyo 112-0012",
-            "phone": "+81 3-2345-6789",
-            "website": "https://samurairobotics.com",
-            "logo": "samurai-robotics-logo.png",
-            "membershipLevel": "Platinum",
-            "description": "Advanced robotics research and manufacturing company pushing technological boundaries.",
-            "industry": "Robotics"
-        },
-        {
-            "name": "Harmony Financial Services",
-            "address": "6-7-8 Chiyoda, Tokyo 102-0093",
-            "phone": "+81 3-9012-3456",
-            "website": "https://harmonyfinancial.co.jp",
-            "logo": "harmony-financial-logo.png",
+            "name": "Daimaru Matsuzakaya Department Store Co.",
+            "address": "2-18-11 Kiba, Koto-ku, Tokyo",
+            "phone": "050-1783-1000",
+            "website": "https://www.daimaru-matsuzakaya.com/",
+            "logo": "daimaru.png",
             "membershipLevel": "Silver",
-            "description": "Comprehensive financial advisory and investment management firm.",
-            "industry": "Financial Services"
+            "description": "A company that offers a wide range of products, including fashion, food, and sundries.",
+            "industry": "Retail"
         },
         {
-            "name": "Urban Design Architects",
-            "address": "7-8-9 Shibuya, Tokyo 150-0043",
-            "phone": "+81 3-5678-9012",
-            "website": "https://urbandesignarchitects.jp",
-            "logo": "urban-design-logo.png",
-            "membershipLevel": "Gold",
-            "description": "Award-winning architectural firm specializing in sustainable urban development.",
-            "industry": "Architecture"
+            "name": "Recruit Holdings, Inc.",
+            "address": "Grant Tokyo South Tower, 1-9-2 Marunouchi, Chiyoda-ku, Tokyo",
+            "phone": "03-6835-1111",
+            "website": "https://www.recruit.co.jp/",
+            "logo": "recruit.jpg",
+            "membershipLevel": "Bronze",
+            "description": "A company that operates a wide range of businesses, including human resource services, media, real estate, and education.",
+            "industry": "Services"
+        },
+        {
+            "name": "CyberAgent, Inc.",
+            "address": "AbemaTowers, 36-16 Udagawa-cho, Shibuya-ku, Tokyo",
+            "phone": "03-5458-3545",
+            "website": "https://www.cyberagent.co.jp/",
+            "logo": "cyber.png",
+            "membershipLevel": "Bronze",
+            "description": "A company that operates a wide range of businesses, with Internet advertising, media, gaming, and investment development as its main pillars.",
+            "industry": "IT"
         }
     ]
 }
