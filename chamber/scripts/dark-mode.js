@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     darkModeStyle.id = 'dark-mode-styles';
     darkModeStyle.textContent = `
         body.dark-mode {
-            background-color: #2c2c2c;
+            background-color: #344e41;
             color: #e0e0e0;
         }
         
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         body.dark-mode nav {
-            background-color: #3c5b3e;
+            background-color: #a3b18a;
         }
         
         body.dark-mode nav a {
@@ -43,25 +43,25 @@ document.addEventListener('DOMContentLoaded', function() {
         
         body.dark-mode section,
         body.dark-mode .card {
-            background-color: #3c3c3c;
-            border-color: #4c4c4c;
-            color: #e0e0e0;
-        }
-        
-        body.dark-mode .card h3 {
-            background-color: #2c2c2c;
+            background-color: #2C2C2C;
+            border-color: #3C3C3C;
             color: #e0e0e0;
         }
         
         body.dark-mode .card a {
-            color: #a0d8ef;
+            color: #e0e0e0;
         }
 
         body.dark-mode #info,
         body.dark-mode #learning {
-            background-color: #2c2c2c;
-            border-color: #3c3c3c;
-            color: #e0e0e0;
+            background-color: #2C2C2C;
+            border-color: #3C3C3C;
+            color: white;
+        }
+
+        body.dark-mode #learning,
+        body.dark-mode #info {
+            background-color: #1d2e28;
         }
         
         body.dark-mode footer {
@@ -74,27 +74,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     header.appendChild(darkModeToggle);
     
-    // Handle dark mode toggle
-    darkModeToggle.addEventListener('click', function() {
+    // Function to apply or remove dark mode
+    function toggleDarkMode() {
+        // Toggle dark mode class on body
         document.body.classList.toggle('dark-mode');
-        document.head.appendChild(darkModeStyle);
         
-        // Persist dark mode preference
+        // Add or remove dark mode styles
         if (document.body.classList.contains('dark-mode')) {
+            // If dark mode is being turned on
+            document.head.appendChild(darkModeStyle);
             localStorage.setItem('darkMode', 'enabled');
         } else {
-            localStorage.removeItem('darkMode');
-            // Remove the dark mode styles when toggling off
+            // If dark mode is being turned off
             const existingDarkModeStyle = document.getElementById('dark-mode-styles');
             if (existingDarkModeStyle) {
                 existingDarkModeStyle.remove();
             }
+            localStorage.removeItem('darkMode');
         }
-    });
+    }
+    
+    // Handle dark mode toggle
+    darkModeToggle.addEventListener('click', toggleDarkMode);
 
-    // Check for saved dark mode preference
+    // Check for saved dark mode preference on page load
     if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        document.head.appendChild(darkModeStyle);
+        // Directly call the toggle function to apply dark mode
+        toggleDarkMode();
     }
 });
