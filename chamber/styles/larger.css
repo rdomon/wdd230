@@ -185,6 +185,11 @@
 
   }
 
+  .members-list{
+    display:grid;
+    grid-template-columns: 300px 200px 300px;
+  }
+
   .member-list-item {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -194,6 +199,9 @@
     border-radius: 5px;
     align-items: center;
     transition: background-color 0.3s ease;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
   }
 
   .member-list-item:hover {

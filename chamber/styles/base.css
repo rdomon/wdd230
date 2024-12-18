@@ -473,7 +473,7 @@ nav {
 
 .members-list{
   display:grid;
-  grid-template-columns: 300px 600px 300px;
+  grid-template-columns: 300px 200px 300px;
 }
 
 .member-list-item {
@@ -487,7 +487,6 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   grid-column-start: 1;
   grid-column-end: 3;
-
 }
 
 .member-list-item span {
