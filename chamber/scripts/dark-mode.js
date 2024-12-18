@@ -20,55 +20,56 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(buttonStyle);
 
     // Create dark mode styles
-    const darkModeStyle = document.createElement('style');
-    darkModeStyle.id = 'dark-mode-styles';
-    darkModeStyle.textContent = `
-        body.dark-mode {
-            background-color: #344e41;
-            color: #e0e0e0;
-        }
+    // const darkModeStyle = document.createElement('style');
+    // darkModeStyle.id = 'dark-mode-styles';
+    // darkModeStyle.textContent = `
+    //     body.dark-mode {
+    //         background-color: #344e41;
+    //         color: #e0e0e0;
+    //     }
         
-        body.dark-mode header {
-            background-color: #1d2e28;
-            color: #e0e0e0;
-        }
+    //     body.dark-mode header {
+    //         background-color: #1d2e28;
+    //         color: #e0e0e0;
+    //     }
         
-        body.dark-mode nav {
-            background-color: #a3b18a;
-        }
-        
-        body.dark-mode nav a {
-            color: white;
-        }
-        
-        body.dark-mode section,
-        body.dark-mode .card {
-            background-color: #2C2C2C;
-            border-color: #3C3C3C;
-            color: #e0e0e0;
-        }
-        
-        body.dark-mode .card a {
-            color: #e0e0e0;
-        }
+    //     body.dark-mode nav {
+    //         background-color: #a3b18a;
 
-        body.dark-mode #info,
-        body.dark-mode #learning {
-            background-color: #2C2C2C;
-            border-color: #3C3C3C;
-            color: white;
-        }
-
-        body.dark-mode #learning,
-        body.dark-mode #info {
-            background-color: #1d2e28;
-        }
+    //     }
         
-        body.dark-mode footer {
-            background-color: #1d2e28;
-            color: #e0e0e0;
-        }
-    `;
+    //     body.dark-mode nav a {
+    //         color: black;
+    //     }
+        
+    //     body.dark-mode section,
+    //     body.dark-mode .card {
+    //         background-color: #2C2C2C;
+    //         border-color: #3C3C3C;
+    //         color: #e0e0e0;
+    //     }
+        
+    //     body.dark-mode .card a {
+    //         color: #e0e0e0;
+    //     }
+
+    //     body.dark-mode #info,
+    //     body.dark-mode #learning {
+    //         background-color: #2C2C2C;
+    //         border-color: #3C3C3C;
+    //         color: white;
+    //     }
+
+    //     body.dark-mode #learning,
+    //     body.dark-mode #info {
+    //         background-color: #1d2e28;
+    //     }
+        
+    //     body.dark-mode footer {
+    //         background-color: #1d2e28;
+    //         color: #e0e0e0;
+    //     }
+    // `;
     
     // Insert toggle button in header
     const header = document.querySelector('header');

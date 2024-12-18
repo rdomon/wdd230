@@ -19,55 +19,64 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(buttonStyle);
 
-    // Create dark mode styles
+    // Create dark mode styles with improved contrast
     const darkModeStyle = document.createElement('style');
     darkModeStyle.id = 'dark-mode-styles';
     darkModeStyle.textContent = `
         body.dark-mode {
-            background-color: #344e41;
-            color: #e0e0e0;
+            background-color: #1f2d20;
+            color: #e6e6e6;
         }
         
         body.dark-mode header {
-            background-color: #1d2e28;
-            color: #e0e0e0;
+            background-color: #15211a;
+            color: #f0f0f0;
         }
         
         body.dark-mode nav {
-            background-color: #a3b18a;
+            background-color: #2c4b32;
         }
         
         body.dark-mode nav a {
-            color: white;
+            color: #f0f0f0;
         }
         
-
         body.dark-mode section,
         body.dark-mode .card {
-            background-color: #2C2C2C;
-            border-color: #3C3C3C;
-            color: #e0e0e0;
+            background-color: #283028;
+            border-color: #3c4e3c;
+            color: #f0f0f0;
+        }
+        
+        body.dark-mode .card h3 {
+            background-color: #1f2d20;
+            color: #f0f0f0;
         }
         
         body.dark-mode .card a {
-            color: #e0e0e0;
+            color: #7bc9f3; /* Bright blue for better readability */
+            text-decoration: underline;
         }
 
         body.dark-mode #info,
         body.dark-mode #learning {
-            background-color: #2C2C2C;
-            border-color: #3C3C3C;
-            color: white;
-        }
-
-        body.dark-mode #learning,
-        body.dark-mode #info{
-            background-color:#1d2e28;
+            background-color: #1f2d20;
+            border-color: #3c4e3c;
+            color: #f0f0f0;
         }
         
         body.dark-mode footer {
-            background-color: #1d2e28;
-            color: #e0e0e0;
+            background-color: #15211a;
+            color: #f0f0f0;
+        }
+
+        /* Improve link hover state */
+        body.dark-mode .card a:hover {
+            color: #a0d8ef;
+        }
+
+        .dark-mode .hamburger-menu{
+            color:white;
         }
     `;
     
@@ -75,21 +84,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     header.appendChild(darkModeToggle);
     
-    // Handle dark mode toggle
-    darkModeToggle.addEventListener('click', function() {
+    // Function to apply or remove dark mode
+    function toggleDarkMode() {
+        // Toggle dark mode class on body
         document.body.classList.toggle('dark-mode');
         
-        // Persist dark mode preference
+        // Add or remove dark mode styles
         if (document.body.classList.contains('dark-mode')) {
+            // If dark mode is being turned on
+            document.head.appendChild(darkModeStyle);
             localStorage.setItem('darkMode', 'enabled');
         } else {
+            // If dark mode is being turned off
+            const existingDarkModeStyle = document.getElementById('dark-mode-styles');
+            if (existingDarkModeStyle) {
+                existingDarkModeStyle.remove();
+            }
             localStorage.removeItem('darkMode');
         }
-    });
+    }
+    
+    // Handle dark mode toggle
+    darkModeToggle.addEventListener('click', toggleDarkMode);
 
-    // Check for saved dark mode preference
+    // Check for saved dark mode preference on page load
     if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        document.head.appendChild(darkModeStyle);
+        // Directly call the toggle function to apply dark mode
+        toggleDarkMode();
     }
 });
